@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import WorkspaceCard from '../components/WorkspaceCard';
 import Filters from '../components/Filters';
 import Header from '../components/Header';
@@ -5,7 +6,13 @@ import { filterWorkspaces } from '../_lib/workspacesData';
 import Conversion from '../components/Conversion';
 import Faqs from '../components/Faqs';
 
-
+export const metadata: Metadata = {
+  title: {
+    default: 'InnateAI | Premium London Workspaces',
+    template: '%s | Workspaces in London',
+  },
+  description: 'List of Workspaces in London, London, UK',
+}
 
 export default async function ServicedOfficesPage({ searchParams }: { searchParams: Promise<any> }) {
   const filters = await searchParams;

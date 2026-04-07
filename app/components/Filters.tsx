@@ -21,13 +21,7 @@ export default function Filters() {
 
   return (
     <div className="bg-white dark:bg-slate-900 p-6 rounded-[2rem] shadow-xl border border-slate-100 dark:border-slate-800 mb-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-        {/* Keyword Search */}
-        <input 
-          type="text" placeholder="Search name or area..." className={inputStyle}
-          onChange={(e) => updateFilter('query', e.target.value)}
-          defaultValue={searchParams.get('query')?.toString()}
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
         {/* Type Filter */}
         <select className={inputStyle} onChange={(e) => updateFilter('type', e.target.value)} defaultValue={searchParams.get('type') || ""}>

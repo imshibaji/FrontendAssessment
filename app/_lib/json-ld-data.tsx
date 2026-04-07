@@ -20,7 +20,7 @@ export default async function JsonLdData({ params }: { params: Promise<{ id: str
       price: workspace.price_per_desk || '0',
       priceCurrency: 'GBP',
       availability: 'https://schema.org/InStock',
-      url: `${process.env.BASEURL}/workspaces/${workspace.id}`,
+      url: `${process.env.BASEURL || 'http://localhost:3000'}/workspaces/${workspace.id}`,
     },
     address: {
       '@type': 'PostalAddress',

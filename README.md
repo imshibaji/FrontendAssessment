@@ -1,5 +1,8 @@
 # 🚀 London Workspace Finder (InnateAI)
 
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen?style=for-the-badge)](https://london-workspace-finder.vercel.app)
+[![GitHub](https://img.shields.io/badge/github-repo-black?style=for-the-badge&logo=github)](https://github.com/imshibaji/FrontendAssessment)
+
 A high-performance, SEO-optimized directory for serviced offices and coworking spaces in London. Built with **Next.js 16**, **Tailwind CSS**, and **TypeScript**.
 
 ## 🌟 Key Features
@@ -110,6 +113,25 @@ We utilize React Server Components. Data is read from the filesystem on the serv
 ##### SEO Strategy
 
 Every sub-page uses `generateMetadata()` to create unique `<title>` and `<meta>` tags. I also inject a `<script type="application/ld+json">` to help Google understand pricing and location data.
+
+## 🎯 Product & UX Decisions
+
+This submission was built with a "Conversion-First" mindset, specifically designed to replace legacy systems with a modern, high-performing frontend.
+
+### 🔍 Search & SEO Strategy
+
+- **Real-time Search:** The client can filter by office type, area, budget, and desk capacity, allowing users to find the perfect workspace for their needs.
+- **Indexability:** Every filtered view generates a unique URL, allowing the client to run targeted marketing campaigns (e.g., "Serviced Offices in Shoreditch").
+- **Rich Snippets:** Integrated JSON-LD ensures that pricing and availability appear directly in Google Search results, increasing CTR.
+
+### 📈 Conversion Optimization
+
+- **The "Nudge" Pattern:** The mid-page conversion block is strategically placed after the 6th listing to catch users who are scrolling and may need expert guidance.
+- **Micro-interactions:** Interactive cards and clear CTAs (Call to Actions) reduce friction in the user journey.
+
+### 📱 Performance & Reliability
+
+- **Next.js 16 Features:** Leveraged the latest asynchronous `params` and `searchParams` to enable Partial Prerendering (PPR), ensuring the "Above the Fold" content (Hero section) loads instantly.
 
 #### 🤝 Contributing
 

@@ -22,6 +22,13 @@ export async function filterWorkspaces(filters: any) {
     data = data.filter((item: any) => item.desks >= parseInt(filters.desks));
   }
 
+  // Sorting
+  if (filters.sort === 'price_low') {
+    data.sort((a: any, b: any) => (a.price_per_desk || 0) - (b.price_per_desk || 0));
+  } else if (filters.sort === 'price_high') {
+    data.sort((a: any, b: any) => (b.price_per_desk || 0) - (a.price_per_desk || 0));
+  }
+
   return data;
 }
 

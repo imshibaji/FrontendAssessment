@@ -21,7 +21,7 @@ export default function Filters() {
 
   return (
     <div className="bg-white dark:bg-slate-900 p-6 rounded-[2rem] shadow-xl border border-slate-100 dark:border-slate-800 mb-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
 
         {/* Type Filter */}
         <select className={inputStyle} onChange={(e) => updateFilter('type', e.target.value)} defaultValue={searchParams.get('type') || ""}>
@@ -54,6 +54,13 @@ export default function Filters() {
           <option value="5">5+ Desks</option>
           <option value="10">10+ Desks</option>
           <option value="20">20+ Desks</option>
+        </select>
+
+        {/* Price Filter */}
+        <select className={inputStyle} onChange={(e) => updateFilter('sort', e.target.value)} defaultValue={searchParams.get('sort') || ""}>
+          <option value="">Sort by Price</option>
+          <option value="price_low">Low to High</option>
+          <option value="price_high">High to Low</option>
         </select>
       </div>
       

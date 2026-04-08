@@ -23,7 +23,7 @@ export default function PriceCard({ws}: {ws: any}) {
             <ContactCard contact={ws.advisor} />
 
             <button onClick={() => handleClick()} className="w-full bg-slate-900 dark:bg-indigo-600 text-white py-5 rounded-[1.25rem] font-black text-lg hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-indigo-500/20">
-                Call for Viewing Advisor
+                Speak to an Advisor
             </button>
         </div>
     );

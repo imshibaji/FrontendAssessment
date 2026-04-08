@@ -20,7 +20,7 @@ export default function Faqs(){
     );
 }
 
-function FAQItem({ q, a }: { q: string, a: string }) {
+export function FAQItem({ q, a }: { q: string, a: string }) {
   return (
     <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm">
       <h3 className="font-bold text-slate-900 dark:text-white mb-2">{q}</h3>

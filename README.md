@@ -2,6 +2,8 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen?style=for-the-badge)](https://london-workspace-finder.vercel.app)
 [![GitHub](https://img.shields.io/badge/github-repo-black?style=for-the-badge&logo=github)](https://github.com/imshibaji/FrontendAssessment)
+[![Stars](https://img.shields.io/github/stars/imshibaji/FrontendAssessment?style=social-media-badge)](https://github.com/imshibaji/FrontendAssessment/stargazers)
+[![Forks](https://img.shields.io/github/forks/imshibaji/FrontendAssessment?style=social-media-badge)](https://github.com/imshibaji/FrontendAssessment/network/members)
 
 A high-performance, SEO-optimized directory for serviced offices and coworking spaces in London. Built with **Next.js 16**, **Tailwind CSS**, and **TypeScript**.
 

@@ -109,7 +109,7 @@ We utilize React Server Components. Data is read from the filesystem on the serv
 
 ##### SEO Strategy
 
-Every sub-page uses `generateMetadata()` to create unique `<title>` and `<meta>` tags. We also inject a `<script type="application/ld+json">` to help Google understand pricing and location data.
+Every sub-page uses `generateMetadata()` to create unique `<title>` and `<meta>` tags. I also inject a `<script type="application/ld+json">` to help Google understand pricing and location data.
 
 #### 🤝 Contributing
 
